@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+        }
+        .container{
+            /* only width property stays same, use max-width for dynamic */
+            max-width: 960px;
+            margin: 30px auto;
+        }
+
+        .clr {
+            clear: both; 
+            /* Clearing float */
+        }
+        .box{
+            background: #f4f4f4;
+            border: 2px solid #333;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        .box p{
+            text-align: left;
+            text-align: center;
+            text-align: right;
+            text-align: justify;
+        }
+        #box-2{
+            float: left;
+            width: 49%;
+        }
+        #box-3{
+            float: right;
+            width: 49%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae numquam cumque quas! Explicabo obcaecati aspernatur odio maxime recusandae hic dolores.</p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae numquam cumque quas! Explicabo obcaecati aspernatur odio maxime recusandae hic dolores.</p>
+        </div>
+        <div id="box-3" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae numquam cumque quas! Explicabo obcaecati aspernatur odio maxime recusandae hic dolores.</p>
+        </div>
+        <div class="clr"></div>  
+        <!-- clearing the left and right float of box 2 and 3 and mention the empty div here in-order to avoid overlapping 
+        of 4th element -->
+        <div id="box-4" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae numquam cumque quas! Explicabo obcaecati aspernatur odio maxime recusandae hic dolores.</p>
+        </div>
+    </div>
+</body>
+</html>
