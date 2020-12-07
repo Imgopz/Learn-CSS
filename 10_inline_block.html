@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block styling</title>
+    <style>
+
+        li {
+            display: inline;
+        }
+        li a {
+            padding-right: 20px;
+        }
+        img {
+            display: block;
+            width: 300px;
+            height: 200px;
+            margin: auto;  /* Margin auto can be give only on block level elements */
+        }
+        .box{
+            width: 32.8%;
+            display: inline-block; /* if display: inline width and margin will be ignored so solution is inline-block*/
+            box-sizing: border-box; /* to not to include padding in total widht */
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Fashion</a></li>
+    </ul>
+    <br><br>
+
+    <img src="./images/leaf.png" alt="leaf">
+    <img src="./images/leaf.png" alt="leaf">
+
+    <br><br>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cumque sunt itaque, modi cum illo nesciunt vitae a? Dignissimos, consectetur.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cumque sunt itaque, modi cum illo nesciunt vitae a? Dignissimos, consectetur.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cumque sunt itaque, modi cum illo nesciunt vitae a? Dignissimos, consectetur.</p>
+    </div>
+</body>
+</html>
