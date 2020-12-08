@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ems and Rems</title>
+    <style>
+        /* paddig takes current value of font size as reference in the below example*/
+        /* #box-1{
+            font-size: 20px;
+        }
+        #box-1 p{
+            font-size: 1.5em;
+            padding: 1em; 
+        }
+        #box-1 ul{
+            font-size: 1.2em;
+        } */
+
+        /* rem always depends on root element where as em depends on its parent element */
+        /* set font-size to 10px or 62.5% so that it will be multipliles of 10px */
+        html{
+            font-size: 10px;
+        }
+        #box-2 h3{
+            font-size: 2rem;
+        }
+        #box-2 p{
+            font-size: 1.6rem;
+            line-height: 1.7rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- li{$}*3 -->
+    <!-- <div id="box-1">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit excepturi voluptatibus deserunt inventore qui. Iste error animi labore illum aut.</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
+    </div> -->
+    <div id="box-2">
+        <h3>Box Two</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit excepturi voluptatibus deserunt inventore qui. Iste error animi labore illum aut.</p>
+    </div>
+</body>
+</html>
