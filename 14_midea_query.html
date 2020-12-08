@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1{
+            display: none;
+        }
+
+        /* Smart phones */
+        @media(max-width: 500px){ /* it will wait until it hit 500px whereas min-width works in opposite way */
+            body{
+                background: red;
+            }
+            #smartphone h1 {
+                display: block;
+            }
+        }
+
+        /* Tablets */
+        @media (min-width: 501px) and (max-width: 768px){ /* to have different style for mobile as well as tablet */
+            body{
+                background: blue;
+            }
+            #tablet h1 {
+                display: block;
+            }
+        }
+
+        /* Normal size */
+        @media (min-width: 769px) and (max-width: 1200px){ 
+            body{
+                background: green;
+            }
+            #normal h1 {
+                display: block;
+            }
+        }
+
+        /* Wide screen */
+        @media (min-width: 1201px){ 
+            body{
+                background: black;
+            }
+            #widescreen h1 {
+                display: block;
+            }
+        }
+
+        /* Landscape */
+        @media (max-height: 500px){ 
+            body{
+                background: Orange;
+            }
+            #landscape h1 {
+                display: block;
+            }
+        }
+    </style>
+    <!-- <link rel="stylesheet" media="screen and (max-width:768px)" href="./14_mobile.css"> --> 
+    <!-- above is the better approach when we have a huge list of styles and pages -->
+</head>
+<body>
+    <div id="widescreen"><h1>Widescreen</h1></div>
+    <div id="normal"><h1>Normal</h1></div>
+    <div id="tablet"><h1>Tablet</h1></div>
+    <div id="smartphone"><h1>Smartphone</h1></div>
+    <div id="landscape"><h1>Landscape</h1></div>
+</body>
+</html>
