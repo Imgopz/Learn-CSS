@@ -14,11 +14,22 @@
         }
 
         .flex-container{
+            background-color: #f4f4f4;
             display: flex;
-            /* column or row with reverse --- we can do it on column as well */
-            /* flex-direction: column;  */
-            /* flex-wrap: wrap; */
-
+            flex-direction: row;
+            /* flex-direction: column; */
+            /* Align items always cross axis */
+            align-items: center;
+            /* align-items: stretch; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* Justify content on main axis */
+            justify-content: center;
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            height: 50vh;
         }
 
         .item{
@@ -29,24 +40,18 @@
             text-align: center;
             border-radius: 10px;
             /* width: 200px; */
-            /* Grow - shrink - grow after 200px --- we can do it on column as well */ 
-            flex: 1 0 200px;
+            /* Grow - shrink - grow after 200px */
+            /* flex: 1; */
         }
 
         .item1{
-            flex-shrink: 0;
-            flex: 2;
+            align-self: flex-start;
         }
-/*
-        .item2{
-            flex-grow: 1;
-            flex-basis: 0;
-        }
-        
+
         .item3{
-            flex-grow: 2;
-            flex-basis: 0;
-        } */
+            align-self: flex-end;
+        }
+
 
     </style>
 </head>
